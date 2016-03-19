@@ -1,0 +1,6 @@
+{
+    "aws-access-key": "AKIAINQHHWTZLKYCX24A",
+    "aws-bucket-name": "earthcompany",
+    "aws-bucket-website": "earthcompany.s3-website-us-east-1.amazonaws.com",
+    "port": 8857
+}
