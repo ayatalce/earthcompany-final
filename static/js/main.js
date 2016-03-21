@@ -253,5 +253,33 @@
 
 	});
 
+	// Get tumblr post
+	function getTumblr() {
+
+		$.ajax({
+			type: 'GET',
+			url: "http://api.tumblr.com/v2/blog/earthcompany-jp.tumblr.com/posts/text?api_key=ZBZzyAZod4J065jK7h1zJueVFkiGVx7u93tROVDRL1kV3Ew5vt",
+			async: false,
+			jsonpCallback: 'jsonCallback',
+			contentType: "application/json",
+			dataType: 'jsonp',
+			success: function(json) {
+				var latest = json.response.posts[0];
+				$("#blog-headline").text(latest.title);
+				$("#blog-body").html(latest.body);
+				json.response.posts.forEach(function(el, i) {
+					if(i > 4) return false;
+					$("#blog-more").append("<li><a href='"+ el.post_url +"'>"+ el.title +"</li>");
+				});
+			},
+			error: function(e) {
+				console.log(e.message);
+			}
+		});   
+	}
+
+
+
+
 
 }());

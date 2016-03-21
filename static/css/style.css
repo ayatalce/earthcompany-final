@@ -58,8 +58,8 @@ a {
 a:hover, a:focus, a:active {
   outline: none;
   text-decoration: none;
-  color: #2e2e2e;
-  border-bottom: 2px solid #7DBE79;
+  color: #7BDE79;
+  border-bottom: 2px solid #7BDE79;
 }
 
 input {
@@ -198,6 +198,38 @@ textarea {
     line-height: 36px;
     letter-spacing: 0px;
   }
+}
+
+blockquote { 
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative; 
+    padding-left: 70px;
+    color: #7DBE79;
+    border-color: #7DBE79;
+    text-align: justify;
+}
+ 
+blockquote:before {
+    content: "\f10d";
+    font-size: 36px; 
+    font-family: FontAwesome;
+    position: absolute;
+    top: -4px;
+    left: 20px;
+}
+
+blockquote span:before{
+    content:'--';
+    padding: 0 10px 0 0;
+}
+
+blockquote span{
+    padding: 10px 0;
+    display: block;
+    font-size: 16px;
+    color: #999;
 }
 
 /* Header */
@@ -899,6 +931,9 @@ Components
   padding-left: 30px;
   padding-right: 30px;
   margin-right: 10px;
+  -webkit-transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
 }
 .btn:hover, .btn:focus, .btn:active {
   box-shadow: none;
@@ -929,7 +964,29 @@ Components
 }
 
 .btn-primary {
+  border-bottom: none !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 10px;
+  -webkit-transition: all .3s ease-in-out;
+       -moz-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
   background: #7DBE79;
+}
+
+.btn-primary:hover,
+.btn-primary:focus, {
+    border: 1px solid ; 
+    outline: 0;
+    color: #fff;
 }
 
 .btn-success {
