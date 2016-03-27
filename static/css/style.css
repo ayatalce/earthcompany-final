@@ -6,10 +6,11 @@
   font-weight: normal;
   font-style: normal;
 }
-html.earth-overflow, body.earth-overflow {
+
+html, body {
   overflow-x: auto;
 }
-html.earth-overflow #earth-header-section, html.earth-overflow #earth-main, html.earth-overflow #earth-hero, html.earth-overflow #earth-mobile-menu, html.earth-overflow #earth-footer, body.earth-overflow #earth-header-section, body.earth-overflow #earth-main, body.earth-overflow #earth-hero, body.earth-overflow #earth-mobile-menu, body.earth-overflow #earth-footer {
+html #earth-header-section, html #earth-main, html #earth-hero, html #earth-mobile-menu, html #earth-footer, body #earth-header-section, body #earth-main, body #earth-hero, body #earth-mobile-menu, body #earth-footer {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -22,11 +23,11 @@ body {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 300;
-  color: #2e2e2e;
+  color: #4a4a4a;
 }
 @media screen and (max-width: 768px) {
   body {
-    font-size: 16px;
+    font-size: 13px;
     line-height: 1.5;
   }
 }
@@ -106,6 +107,8 @@ h5, .h5 {
   font-size: 14px;
   line-height: 24px;
   font-family:  "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  text-align: justify-all;
+  color: #4a4a4a;
 }
 
 h6, .h6 {
@@ -169,6 +172,84 @@ textarea {
 
 @media screen and (max-width: 768px) {
   .earth-lead {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .earth-lead {
+    font-size: 18px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .earth-lead {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+.earth-proverb {
+  font-size: 26px;
+  line-height: 42px;
+  font-weight: 600;
+  text-align: justify-all;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .earth-proverb {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .earth-proverb {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .earth-proverb {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.earth-about-wrap {
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+@media screen and (max-width: 768px) {
+  .earth-about-wrap {
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+}
+
+.earth-about {
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 600;
+  text-align: justify-all;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .earth-about {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .earth-about {
     font-size: 16px;
     line-height: 28px;
   }
@@ -183,41 +264,15 @@ textarea {
   }
 }
 
-.earth-proverb {
-  font-size: 24px;
-  line-height: 42px;
-  font-weight: 600;
-  text-align: left;
-  color: #4a4a4a;
-  letter-spacing: 0px;
-}
-
-@media screen and (max-width: 768px) {
-  .earth-proverb {
-    font-size: 24px;
-    line-height: 36px;
-    letter-spacing: 0px;
-  }
-}
-
 blockquote { 
     display: block;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     position: relative; 
-    padding-left: 70px;
+    padding-left: 40px;
     color: #7DBE79;
     border-color: #7DBE79;
     text-align: justify;
-}
- 
-blockquote:before {
-    content: "\f10d";
-    font-size: 36px; 
-    font-family: FontAwesome;
-    position: absolute;
-    top: -4px;
-    left: 20px;
 }
 
 blockquote span:before{
@@ -232,10 +287,59 @@ blockquote span{
     color: #999;
 }
 
+
+video .earth-hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.earth-hero{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom:0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+@media screen and (max-width: 768px) {
+  .earth-hero-video {
+    display: none;
+  }  
+}
+
+@media screen and (max-width: 1200px) {
+  #earth-logo1 {
+    display: none;
+    height: 0px;}
+}
+
+@media screen and (max-width: 768px) {
+  .separate-para {
+    display: none;
+    height: 0px;}
+}
+
+@media screen and (min-width: 768px) {
+  .earth-separate {
+    display: none;
+    height: 0px;}
+}
+
+/* fix for IE8 refer to conditional comment in the <head> of the page*/
+video {
+    display: block;
+}
+
+
+
 /* Header */
 #earth-header-section {
   width: 100%;
-  padding: 40px 0 30px 0;
+  padding: 10px 0 10px 0;
+  background: white;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
@@ -296,7 +400,7 @@ blockquote span{
 
 #earth-logo a {
   border-bottom: none !important;
-  color: #fff;
+  color: #2e2e2e;
   letter-spacing: 3px;
   text-transform: uppercase;
 }
@@ -304,7 +408,7 @@ blockquote span{
   #earth-logo {
     text-align: center;
     padding-top: 4px;
-    margin: 20px 0 0 0;
+    margin: 10px 0 0 0;
     float: none !important;
   }
 }
@@ -321,7 +425,7 @@ blockquote span{
 
 #earth-logo1 a {
   border-bottom: none !important;
-  color: #fff;
+  color: #2e2e2e;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -332,6 +436,7 @@ blockquote span{
     float: none !important;
   }
 }
+
 
 /* Superfish Override Menu */
 .sf-menu {
@@ -346,11 +451,11 @@ blockquote span{
   box-shadow: none;
   border: transparent;
   min-width: 8em;
-  *width: 8em;
+  width: 8em;
 }
 
 .sf-menu a {
-  color: rgba(255, 255, 255, 0.4);
+  color: #2e2e2e;
   padding: .75em 1em;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -384,7 +489,7 @@ blockquote span{
 .sf-menu ul li:hover a,
 .sf-menu ul li.sfHover a,
 .sf-menu li.active a {
-  color: #ffffff;
+  color: #7DBE79;
 }
 
 .sf-menu ul li:hover,
@@ -398,7 +503,7 @@ blockquote span{
 
 .sf-arrows .sf-with-ul {
   padding-right: 2.5em;
-  *padding-right: 1em;
+  padding-right: 1em;
 }
 
 .sf-arrows .sf-with-ul:after {
@@ -456,7 +561,7 @@ blockquote span{
   top: 50%;
   margin-top: -7px;
   content: "\e64b";
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 }
 #earth-primary-menu > li > ul li > .sf-with-ul:after {
   border: none !important;
@@ -538,7 +643,7 @@ blockquote span{
   background: none;
 }
 #earth-primary-menu .earth-sub-menu a:hover {
-  color: #7DBE79 !important;
+  color: #7dbe79 !important;
 }
 
 /* Mobile Menu */
@@ -548,7 +653,7 @@ blockquote span{
   position: absolute;
   top: 0;
   left: 0;
-  background: #7DBE79;
+  background: #7dbe79;
   height: 60px;
   display: table;
 }
@@ -658,6 +763,63 @@ blockquote span{
   text-transform: uppercase;
 }
 
+
+/* 2col style */
+
+#earth-about {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  #earth-about .earth-text {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #earth-about .earth-text {
+    width: 100%;
+    min-height: 200px;
+  }
+}
+
+#earth-about .earth-text {
+  padding: 2em 6em;
+  text-align: left;
+}
+
+@media screen and (max-width: 992px) {
+  #earth-about .earth-text {
+    padding: 1em;
+  }
+}
+
+#earth-about .earth-bg {
+  background: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 992px) {
+  #earth-about .earth-bg {
+    width: 100%;
+    min-height: 500px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #earth-about .earth-bg {
+    width: 100%;
+    min-height: 300px;
+  }
+}
+
 #earth-feature {
   background: #f6f9fa;
   padding: 5em 0;
@@ -668,11 +830,11 @@ blockquote span{
   }
 }
 
+
+/* earth-hero */
+
 #earth-hero {
-  background-color: #2e2e2e;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center left;
+  background-image: url("../static/images/lim_stand.jpg"); 
   height: 600px;
   position: fixed;
   top: 0;
@@ -680,15 +842,25 @@ blockquote span{
   right: 0;
   z-index: 5;
   color: #ffffff;
+  min-height: 400px;
 }
+
+.overlay{
+  position: absolute;
+  top: 230px;
+  left: 100px;
+  z-index: 10;
+}
+
 @media screen and (max-width: 768px) {
   #earth-hero {
     background-position: center center;
-  }
 }
+}
+
 #earth-hero .earth-hero-wrap {
   display: table;
-  height: 600px;
+  height: 200px;
   width: 100%;
 }
 #earth-hero .earth-hero-wrap .earth-hero-intro {
@@ -808,8 +980,6 @@ body.earth-mobile-menu-visible #earth-mobile-menu {
   transform: translateX(0);
 }
 
-
-
 /* Helper Classes */
 /* Spacer */
 .earth-spacer {
@@ -927,7 +1097,7 @@ Components
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
-  border-radius: 30px;
+  border-radius: 40px;
   padding-left: 30px;
   padding-right: 30px;
   margin-right: 10px;
@@ -980,6 +1150,12 @@ Components
        -moz-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
   background: #7DBE79;
+}
+
+.donate{
+  background:white;
+  color: #7BDE79;
+  box-shadow: 1px 1px 3px rbga(0,0,0,0.3);
 }
 
 .btn-primary:hover,
@@ -1187,7 +1363,7 @@ Components
   .earth-feature-3 .earth-feature-blurb {
     width: 80%;
   }
-}
+} d
 
 /* Header */
 .earth-header {
@@ -1210,7 +1386,7 @@ Components
   line-height: 30px;
 }
 
-/* Easy Rsponsive Tabs */
+/* Easy Responsive Tabs */
 .earth-tab {
   clear: both;
   display: block;
@@ -1269,17 +1445,29 @@ Components
   }
 }
 
-#earth-testimonial {
-  padding: 10em 0;
-  background: #000 url(../images/hero2.jpg) no-repeat center center;
+#earth-separate {
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
-  #earth-testimonial {
-    padding: 3em 0;
+
+#separate-para{
+    background: #222;
+    background: url(../images/proverb.png) 50% 0 no-repeat scroll;
+    -webkit-background-size: cover;
+       -moz-background-size: cover;
+            background-size: cover;
+         -o-background-size: cover;
+}
+
+.separate-section {
+    padding: 320px 0;
+}
+
+@media screen and (min-width: 768px) {
+  #earth-separate {
+    display: none;
   }
 }
-#earth-testimonial blockquote {
+#earth-separate blockquote {
   padding-left: 0;
   width: 70%;
   margin: 0 auto;
@@ -1289,22 +1477,23 @@ Components
   line-height: 57px;
 }
 @media screen and (max-width: 768px) {
-  #earth-testimonial blockquote {
+  #earth-separate blockquote {
     width: 100%;
-    font-size: 35px;
+    font-size: 24px;
     line-height: 47px;
   }
 }
-#earth-testimonial blockquote p {
+#earth-separate blockquote p {
   text-align: center;
   color: #ffffff;
 }
-#earth-testimonial .earth-testimonial-author {
+#earth-separate .earth-separate-author {
   font-size: 18px;
 }
-#earth-testimonial .earth-uppercase-heading-sm {
+#earth-separate .earth-uppercase-heading-sm {
   color: #ffffff;
 }
+
 
 #earth-newsletter {
   padding: 3em 0;
@@ -1327,6 +1516,13 @@ Components
     padding: 2em 0;
   }
 }
+
+.content-section {
+    padding: 100px 0;
+}
+
+
+
 
 /* Accordions */
 .earth-accordion .panel-title > a:hover {
@@ -1547,56 +1743,24 @@ Components
   border: 2px solid #7DBE79;
 }
 
-/* Image Alignment */
-img.earth-align-right {
-  float: right;
-  margin: 0 0 .5em 1em;
-}
-@media screen and (max-width: 480px) {
-  img.earth-align-right {
-    width: 100%;
-    margin: 0 0 .5em 0;
-  }
-}
-img.earth-align-left {
+/* Media */
+
+.partner-logo {
+  margin-bottom: 30px;
   float: left;
-  margin: 0 1em .5em 0;
-}
-@media screen and (max-width: 480px) {
-  img.earth-align-left {
-    width: 100%;
-    margin: 0 0 .5em 0;
-  }
-}
-img.earth-align-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  vertical-align: middle;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
 }
 
-a > img.earth-align-right {
-  float: right;
-  margin: 0 0 .5em 1em;
+#earth-trusted {
+  padding: 5em 0;
 }
-@media screen and (max-width: 480px) {
-  a > img.earth-align-right {
-    width: 100%;
-    margin: 0 0 .5em 0;
+@media screen and (max-width: 768px) {
+  #earth-trusted {
+    padding: 2em 0;
   }
 }
-a > img.earth-align-left {
-  float: left;
-  margin: 0 1em .5em 0;
-}
-@media screen and (max-width: 480px) {
-  a > img.earth-align-left {
-    width: 100%;
-    margin: 0 0 .5em 0;
-  }
-}
-a > img.earth-align-center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-

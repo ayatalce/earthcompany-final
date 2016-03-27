@@ -7,10 +7,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>一般社団法人 Earth Company</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" content="アースカンパニーは「支援を支援する」団体です。" />
-  	<meta name="keywords" content="Earth Company, アースカンパニー, NPO, インドネシア, バリ, 日本, ブミセハット, GAKKO " />
-  	<meta name="author" content="Earth Company" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">	
+  <meta name="description" content="アースカンパニーは「支援を支援する」団体です。" />
+  <meta name="keywords" content="Earth Company, アースカンパニー, NPO, インドネシア, バリ, 日本, ブミセハット, GAKKO" />
+  <meta name="author" content="Earth Company" />
 
   	<!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -45,6 +45,10 @@
 
 	<!-- Theme Style -->
 	<link rel="stylesheet" href="../static/css/style.css">
+
+	<!-- Parallax stylesheet -->
+    <link href="../static/css/parallax.css" rel="stylesheet">
+
     
 	
 	<!-- FOR IE9 below -->
@@ -57,26 +61,24 @@
 	<body>
 
 			<!-- START #earth-header -->			
-			<header id="earth-header-section" role="header" class="" >
-				<div class="container">
-					
+			<header id="earth-header-section" role="header">
+				<div class="container">					
 					<!-- START #earth-logo -->
-					<h1 id="earth-logo" class="pull-left"><a href="index.html"><img src="../static/images/logo.png" alt="Earth Company"></a></h1>
-					<h1 id="earth-logo1" class="pull-left"><a>私たちは、途上国の未来に変革をもたらす<br>社会起業家を支援する団体です</a></h1>
-					
+					<h1 id="earth-logo" class="pull-left"><a href="index.html"><img src="../static/images/logo.svg" width="145" height="55" alt="Earth Company"></a></h1>
+					<h1 id="earth-logo1" class="pull-left" style=""><a>私たちは、途上国の未来に変革をもたらす<br>社会起業家を支援する団体です</a></h1>					
 					<!-- START #earth-menu-wrap -->
 					<nav id="earth-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="earth-primary-menu">
 							<li class="active">
-								<a href="index.html">ホーム</a>
+								<a href="index.html"><b>ホーム</b></a>
 							</li>
 							<li>
-								<a href="#" class="earth-sub-ddown">メニュー</a>
+								<a href="#" class="earth-sub-ddown"><b>メニュー</b></a>
 								 <ul class="earth-sub-menu">
-								 	<li><a href="#">会社概要</a></li>
-								 	<li><a href="#">メンバー</a></li>
-									<li><a href="#">採用情報</a></li>
-									<li>
+								 	<li><a href="http://www.earthcompany.jp">会社概要</a></li>
+								 	<!--   -->
+									<li><a href="http://www.earthcompany.jp/#!jobs/cida">採用情報</a></li>
+									<!-- <li>
 										<a href="#" class="earth-sub-ddown">プロジェクト</a>
 										<ul class="earth-sub-menu">
 											<li><a href="#">PROJECT A</a></li>
@@ -84,246 +86,289 @@
 											<li><a href="#">PROJECT C</a></li>
 											<li><a href="#">PROJECT D</a></li>
 										</ul>
-									</li>
-									<li><a href="#">テスト</a></li> 
+									</li> -->
+									<!-- <li><a href="#">テスト</a></li>  -->
 								</ul>
 							</li>
-							<li><a href="#">支援する</a></li>
-							<li><a href="#">お問い合わせ</a></li>
+							<li><a href="http://www.earthcompany.jp/#!donation/c13hp"><b>寄付する</b></a></li>
+							<li><a href="http://www.earthcompany.jp/#!contact/ci3u"><b>お問い合わせ</b></a></li>
 						</ul>
 					</nav>
-
 				</div>
 			</header>
-			
-			<!-- START #earth-hero -->
-			<aside id="earth-hero" style="background-image: url(../static/images/top.jpg);">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6 col-md-offset-1">
-							<div class="earth-hero-wrap">
-								<div class="earth-hero-intro">
-										<h1><span style="text-align: left; line-height: 110%; font-size: 34px; letter-spacing: 4px;"><br><b><p>私たちは、</p><p>支援を支援</p><p>していきます。</p></b></span></h1><br>
-										<h1><a href="#" class="btn-primary btn-lg pull-left">支援する</a></h1>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</aside>
 
-			<div id="earth-main">
+			<!-- START #earth-hero -->           
+	<header id="earth-hero" style="background-image: url(../static/images/tomaska_top.jpg); background-size: cover;">
+    <div class="earth-hero-video">
+      <video preload="true" autoplay="autoplay" loop="loop" volume="0">
+        <source src= "../static/video/earthcompany_header.mp4" type = "video/mp4">
+        <source src= "../static/video/earthcompany_header.webm" type = "video/webm">
+      </video>
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-1 earth-hero-intro">
+               <h1><span style="text-align: left; line-height: 48px; font-size: 28px; letter-spacing: 4px; text-shadow: 1px 1px 3px rgba(0,0,0,0.3);"><b><p>私たちは、<br>支援を支援<br>していきます。</p></b></span></h1><br>
+              <h1><a href="http://www.earthcompany.jp/#!donation/c13hp" class="btn-primary btn-lg donate pull-left"><b>寄付する</b></a></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+		</div>
+	</header>
 
+		<div id="earth-main">
 				<div class="container">
-					<div class="row">
+					<div>
 						<div class="col-md-8 col-md-offset-2 text-center earth-lead-wrap">
-							<h2 class="earth-lead">アース・カンパニーは<br><span style="color: #7dbe7e">「未来を託された」</span>途上国の社会起業家と<br>日本のみなさまの<span style="color: #7dbe7e">「橋渡し」</span>を行い<br>後世へより良い地球を引き継ぐ活動への<br><span style="color: #7dbe7e">「支援の輪」</span>を広げることを目指しています。
+							<h2 class="earth-lead">アース・カンパニーは<br><span style="color: #7dbe79">未来を託された</span>途上国の社会起業家と<br>日本のみなさまの<span style="color: #7dbe79">橋渡し</span>を行い<br>後世へより良い地球を引き継ぐ活動への<br><span style="color: #7dbe79">支援の輪</span>を広げることを目指しています。
 							</h2>
-							<h4 class="h4">
-							<h4>　2014年、共同創設者の濱川明日香・濱川知宏がダライ・ラマ14世よりUnsung Heroes of Compassion（謳われることなき英雄賞）を受賞したことをきっかけに設立。<br>　この地球は、本来は後世の人々のものであり、私たち大人が、大切な子供たち、子孫から借りているものです。しかし、20世紀の経済発展を最優先させた世のあり方は、環境、社会、人に、多くの弊害を生みました。<br>　私たちは今、自信を持ってこの地球を後世にバトンタッチすることができるでしょうか？<br>　その危機感から、アジア太平洋の途上国で「後世に残せる未来」のために活動する革新的で情熱的な社会起業家と日本のみなさまの「橋渡し」を行い、後世へより良い地球を引き継ぐ活動への支援の輪を広げることをミッションとしています。<br>　日本もその一員であるアジア太平洋地域には、素晴らしい環境、人、文化があります。私たちはこの活動を通じ、一人でも多くの日本人が各地域への理解と学びを深め、「未来のために行動を起こす」きっかけになることを目指しています。</h4><br>
-						</div>						
-					</div>
-					<div class="hr"></div>
-					<div class="earth-spacer earth-spacer-md"></div>                    
-				</div>		
-				</section>
+						</div>													
+				</div>
+		</div>		
+	</section>
 
-				<section>
-					<div class="container">
-						<div class="row earth-feature-1">
-							<div class="col-md-12">
-							    <ul class="earth-social-icons">
-							    <span style="color: #7dbe7e; font-size: 70px;"><i class="ti-direction"></i></a></span>							
-						        </ul>
-								<h2 class="earth-heading-sm text-center"><b>活動指針</b></h2><br>
-							</div>
-							<div class="col-md-6">
-								<img src="../static/images/proverb.png" alt="Image" class="img-responsive">
-							</div><br>
-							<div class="col-md-6">									
-									    <div>
-			                                <h2 class="earth-proverb"><blockquote>この地球は<br>先祖から継承したのではなく<br>私たちの子供たち、子孫から借りているのです<br>
-                                            <span style="color:#7b7b7b; font-size: 18px;">古代ネイティヴ・アメリカンの格言</span></blockquote>
-                                            <h4 class="h4">
-                                            <h4>　アース・カンパニーはこの格言に深く共鳴し、人類はまさにこのような観点から社会を構築すべきであるという考えから、この格言を活動指針としています。</h4><br>
-										</div>									
-							</div>
-						</div>
-						<div class="earth-spacer earth-spacer-xlg"></div>
-						<div class="hr"></div><br>
-						<div class="earth-spacer earth-spacer-sm"></div>
-					</div>
-				</section>
+		<div id="earth-about">
+      <div class="col-md-6 col-md-push-6 earth-bg" style="background-image: url(../static/images/lim_stand.jpg)">
+       
+      </div>
+			  
+      <div class="col-md-6 col-md-pull-6 earth-text" style="background: #7dbe79;">
+         <div>
+         <h4 style="color:white;">Earth Company Impact Hero of the Year 2016</h4>
+             <h2 style="color: #ffffff; font-weight: bold;">ロビン・リム</h2><h4 style="color: #ffffff">バリ・フィリピンで貧困層の妊産婦に24時間365日無償医療を提供する「ブミセハット助産院」</h4><h5 style="color: white;">毎日どこかで5000人の赤ちゃんと800人のお母さんが妊娠・出産中に亡くなっています。途上国における妊産婦死亡率は、先進国の300倍です。そんな窮状に立ち向かうため、ひとりの女性が立ち上がりました。その名はロビン・リム。彼女は、貧困や災害のため医療ケアを受けられず亡くなるお母さんと赤ちゃんの命を救うべく、１９９５年「ブミセハット助産院」をインドネシア・バリ島に設立しました。ブミセハット助産院は、貧しい人にも、どんな宗教の人にも、どんな病気の人にも、24時間365日、無償で医療を提供します。今や、地域になくてはならない存在となったそのブミセハット助産院が、現在財政難に陥っています。増える一方の需要に対応できるよう、より規模の大きい病院を設立しているためです。アース・カンパニーは彼女を「Impact Hero of the year 2016」に選出し、新クリニックの建設費の寄付とロビンへの支援ネットワーク拡大に取り組んでいます。貧しい妊産婦と赤ちゃんの命を救うブミセハット助産院の病院建設に、ぜひご協力ください。
+             </h5>
+        </div> 
 
-				<section>
+      </div>
+      
 
-					<div class="container">
-						<div class="row">
-						
-							
-							<div class="col-md-12">
-							    <ul class="earth-social-icons">
-							    <span style="color: #7dbe7e; font-size: 70px;"><i class="ti-agenda"></i></a></span>							
-						        </ul>
-								<h2 class="earth-heading-sm text-center"><b><span style="letter-spacing: 1px">Earth Company</span>の活動</b></h2>
-								
-								<div class="earth-spacer earth-spacer-sm"></div>
+    <div class="col-md-6 earth-bg" style="background-image: url(../static/images/impact_hero.jpg)"></div>
+    <div class="col-md-6 earth-text" style="background: #368953;">
+        <div>
+        <h4 style="color: #ffffff">Earth Company’s Impact Hero of the year  に選出するのは、次のような能力・資質を持つ社会起業家です。</h4><div>
+          <h5 style="font-size:13px; line-height: 36px; color: #ffffff;">
+          コミュニティに求められ、期待され、未来を託された<span style="font-size: 20px; font-weight: bold; letter-spacing: 1px;"><br>- 希望の星</span><br>
+          途上国の逆境の中でも突出する壮大な <span style="font-size: 20px; font-weight: bold; letter-spacing: 1px;"><br>- 情熱、信念、熱量</span><br>
+          利権・利害関係に囚われない、<span style="font-size: 20px; font-weight: bold; letter-spacing: 1px;"><br>- 純粋な社会的動機</span><br>
+          体制を恐れず、固定観念に囚われない、<span style="font-size: 20px; font-weight: bold; letter-spacing: 1px;"><br>- 型破りな行動力</span><br>
+          人の心を突き動かし、動員する、<span style="font-size: 20px; font-weight: bold; letter-spacing: 1px;"><br>- 一際輝くカリスマ、求心力</span><br>
+          従来のシステムではない、サステナブルな未来を創ろうとする<span style="font-size: 20px; font-weight: bold; letter-spacing: 1px;"><br>- 未来志向</span><br>
+          私たち先進国の人間を<span style="font-size: 20px; font-weight: bold; letter-spacing: 1px;"><br>- インスパイアし、学びを与える力</span> 
+        </div>  
+      </div>
+    </div>
 
-								<div id="earth-tab-feature-center" class="earth-tab text-center">
-									<ul class="resp-tabs-list hor_1">
-										<li><i class="earth-tab-menu-icon ti-money" style="color: #368953; font-size: 24px"></i><span style="color: #368953; font-size: 24px;"><b>Empower</b></span></li>
-										<li><i class="earth-tab-menu-icon ti-ruler-pencil" style="color: #f95469; font-size: 24px;"></i><span style="color: #f95469; font-size: 24px;"><b>Inspire</b></span></li>
-										<li><i class="earth-tab-menu-icon ti-thought" style="color: #257984; font-size: 24px;"></i><span style="color: #257984; font-size: 24px;"><b>Advise</b></span></li>
+   <section>
+        <section id="earth-newsletter">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2" style="padding-top: 40px; padding-bottom: 40px;">           
+              <h2 class="earth-proverb">古代ネイティブアメリカンの格言に、<br><span style="color:#7dbe79">この地球は先祖から継承したのではなく私たちの子供たち、子孫から借りているのです</span><br>という言葉があります。<br>私たち Earth Company はこの格言に深く共鳴し、人類はまさにこのような観点から社会を構築すべきであるという考えから、この格言を活動指針としています。</h2>        
+              </div>
+            </div>
+          </div>       
+  </section>
+
+    <!-- Separate-para Section -->
+    <section id="separate-para" class="separate-para separate-section parallax">
+      <div class="container">
+        <div class="col-md-12 text-center"> 
+          <div class="col-md-12">
+            <div class="owl-carousel-fullwidth earth-light-arrow owl-carousel-2">                 
+            </div>
+          </div>
+        </div><!-- /.container -->
+    </section><!-- /.separate-para -->
+
+    <!-- Separate Mobile Section -->
+    <section id="earth-separate">
+        <div>
+        <img src="../static/images/proverb.png" class="img-responsive" alt="サンプル画像">
+        </div><!-- /.container -->
+        <div class="earth-spacer earth-spacer-sm"></div>
+    </section><!-- /.separate-para -->
+    <!-- Separate Mobile End -->		
+
+    <section>
+            <div class="earth-spacer earth-spacer-sm"></div>
+
+  	<section>
+			  <div class="container">
+						<div class="row">	
+            <div class="col-md-6 pull-left">
+              <h2 class="earth-heading-sm" style="font-size: 28px; letter-spacing: 1px; color: #7dbe79; padding-left: 16px;"><b>Earth Company の活動</b></h2>
+              </div>
+							<div class="col-md-12">							    
+								<div id="earth-tab-feature-center" class="earth-tab">
+									<ul class="resp-tabs-list hor_1 pull-right">
+										<li><span style="font-size: 24px;"><b>Empower</b></span></li>
+										<li><span style="font-size: 24px;"><b>Inspire</b></span></li>
+										<li><span style="font-size: 24px;"><b>Advise</b></span></li>
 									</ul>
-									<div class="resp-tabs-container hor_1">
-										<div>
-											<div class="row">
-												<div class="col-md-12">
-													<h2 class="h2"><span style="color: #368953;"><b>Empower</b></span></h2>
-												</div>
-												<div class="col-md-6">
-													<h3><b>アジア太平洋の社会起業家支援</b></h3>
-													<p>　アジア太平洋の途上国で「この人が未来を変える！」と確信させる革新的な社会起業家を年にひとり厳選し、支援しています。「この人が未来を変える！」と確信させる革新的で情熱的な社会起業家を、「Impact Hero of the Year」として年に1人厳選し、ファンドレイジング始め、事業発展のための様々な機会創出を支援していきます。</p>
-												</div>
-												<div class="col-md-6">													
-													<img src="../static/images/Robin-Lim.jpg" alt="Image" class="img-responsive">	
-						                        </div>
-											</div>
+								<div class="resp-tabs-container hor_1">
+                  <div>
+										<div class="row">
+											<div class="col-md-12"></div>
+											<div class="col-md-6" style="padding-top: 20px;">
+											<h3><b>アジア太平洋の社会起業家支援</b></h3>
+											<p>アジア太平洋の途上国で「この人が未来を変える！」と確信させる革新的な社会起業家を年にひとり厳選し、支援しています。「この人が未来を変える！」と確信させる革新的で情熱的な社会起業家を、「Impact Hero of the Year」として年に1人厳選し、ファンドレイジング始め、事業発展のための様々な機会創出を支援していきます。</p>
+											</div><br>
+										    <div class="col-md-6" style="padding-top: 20px;">													
+													<img src="../static/images/Robin_Lim.jpg" alt="Image" class="img-responsive">	
+						            </div>
 										</div>
-										<div>
-											<div class="row">
-												<div class="col-md-12">
-													<h2 class="h2"><span style="color: #f95469"><b>Inspire</b></span></h2>
-												</div>
-												<div class="col-md-6">
-													<h3><b>社会に変革をもたらす次世代リーダーを啓蒙・育成</b></h3>
-													<p>　社会貢献や国際支援を志す若者にソーシャル・イノベーションやソーシャル・ビジネスなどに触れる機会を提供。その後の人生に大きく影響するような体験型の教育プログラムを通じて、未来を担う若き次世代リーダーを啓蒙・育成します。 <p>
-													
-													<h3><b>- GAKKO in Bali (2016年7月)</b></h3><p>　GAKKO Projectと連携し、イェール大やハーバード大を始め、世界の名だたる大学からクリエイティブな大学生を集め、高校生に10日間の「世界一楽しいサマーキャンプ」をバリ島で開催します。</p>
-													<h6>主催：GAKKO　協力：Earth Company</h6>
-													
-													<h3><b>- GiFT Diversity Voyage in Bali (2016年8月予定)</b></h3>
-													<p>　「GiFT」率いる大学生がバリ島を訪れ、現地学生と共に、現地の社会課題解決に挑む「体験型地球市民育成ツアー」をアース・カンパニーがナビゲートします。</p>
-													<h6>主催：Gift　受入：Earth Company　協力：JTB</h6>
-													
-													<h3><b>- Earth Company’s Social Innovation Study Tour in Bali (2016年9月予定)</b></h3>
-													<p>　ソーシャル・イノベーションの宝庫であるバリ島で、社会貢献を志す日本の若者に、社会革新の最前線を体験してもらう現地スタディツアーを開催します。</p>
-													<h6>主催：Earth Company　協力：HIS</h6>
-												</div>
-												<div class="col-md-6">
-												    <img src="../static/images/gakko.jpg" alt="Image" class="img-responsive"><br>
-											        <img src="../static/images/bali.jpg" alt="Image" class="img-responsive">	
-												</div>
+									</div>
+                  <div>
+                    <div class="row">
+											<div class="col-md-12"></div>
+                      <div class="col-md-6" style="padding-top: 20px;">                         
+                        <h3><b>社会に変革をもたらす次世代リーダーを啓蒙・育成</b></h3>
+                        <p>社会貢献や国際支援を志す若者にソーシャル・イノベーションやソーシャル・ビジネスなどに触れる機会を提供。その後の人生に大きく影響するような体験型の教育プログラムを通じて、未来を担う若き次世代リーダーを啓蒙・育成します。<p>
+                        <h3><b>GAKKO in Bali (2016年7月)</b></h3><p>GAKKO Projectと連携し、イェール大やハーバード大を始め、世界の名だたる大学からクリエイティブな大学生を集め、高校生に10日間の「世界一楽しいサマーキャンプ」をバリ島で開催します。</p>
+                        <h6>主催：GAKKO　協力：Earth Company</h6>
+                        <h3><b>GiFT Diversity Voyage in Bali (2016年8月予定)</b></h3>
+                        <p>「GiFT」率いる大学生がバリ島を訪れ、現地学生と共に、現地の社会課題解決に挑む「体験型地球市民育成ツアー」をアース・カンパニーがナビゲートします。</p>
+                        <h6>主催：Gift　受入：Earth Company　協力：JTB</h6>
+                        <h3><b>Earth Company’s Social Innovation Study Tour in Bali (2016年9月予定)</b></h3>
+                        <p>ソーシャル・イノベーションの宝庫であるバリ島で、社会貢献を志す日本の若者に、社会革新の最前線を体験してもらう現地スタディツアーを開催します。</p>
+                        <h6>主催：Earth Company　協力：HIS</h6>
 											</div>
+                    <div class="col-md-6" style="padding-top: 20px;">                         
+											<img src="../static/images/gakko.jpg" alt="Image" class="img-responsive"><br>
+											<img src="../static/images/bali.jpg" alt="Image" class="img-responsive">	
 										</div>
-										<div>
-											<div class="row">
-												<div class="col-md-12">
-													<h2 class="h2"><span style="color: #257984"><b>Advise</b></span></h2>
+									</div>
+								</div>
+									<div>
+										<div class="row">
+											<div class="col-md-12"></div>
+                      <div class="col-md-6" style="padding-top: 20px;">                         
+												<h3><b>社会的企業・団体に対するアドバイザリー</b></h3>
+												<p>　社会変革に挑む事業や団体のニーズ・課題に対し、経営戦略コンサルティング、モニタリング評価に関するアドバイザリー、リーダーシップ・コーチングなどを通し、より大きな社会インパクトの創出をサポートします。</p>
 												</div>
-												<div class="col-md-6">
-													<h3><b>社会的企業・団体に対するアドバイザリー</b></h3>
-													<p>　社会変革に挑む事業や団体のニーズ・課題に対し、経営戦略コンサルティング、モニタリング評価に関するアドバイザリー、リーダーシップ・コーチングなどを通し、より大きな社会インパクトの創出をサポートします。</p>
+                      <div class="col-md-6" style="padding-top: 20px;">                         
+												<img src="../static/images/advise.jpg" alt="Image" class="img-responsive">
 												</div>
-												<div class="col-md-6">
-													<img src="../static/images/advise.jpg" alt="Image" class="img-responsive">
-												</div>
-												<div class="earth-spacer earth-spacer-sm"></div>                                                
-											</div>
+												<div class="earth-spacer earth-spacer-sm"></div>                                         </div>
 										</div>
 									</div>
 								</div>
 							</div>
-							
 							<!-- END Tabs -->
-							<div class="earth-spacer earth-spacer-md"></div>
-						</div>
-						<div class="hr"></div>
-						<div class="earth-spacer earth-spacer-md"></div>
-					</div>
-				</section>
-
-				<section>
-					<div class="container">
-						<div class="row earth-feature-1">
-							<div class="col-md-12">
-							    <ul class="earth-social-icons">
-							    <span style="color: #7dbe7e; font-size: 70px;"><i class="ti-crown"></i></a></span>							
-						        </ul>
-								<h2 class="earth-heading-sm text-center"><span style="letter-spacing: 1px"><b>Impact Hero of the Year</b></span></h2><br><br>
-							</div>
-							<div class="col-md-6">									
-									    <div>
-									    <h2><b>深く質の高い活動支援をするために</b></h2>
-										<p>　共同創設者 濱川明日香・知宏がこれまでに出会った途上国の素晴らしいリーダーたちの中で、稀にふたりの度肝を抜く「傑物」たちがいました。</p><p>　彼らの多くは、輝かしい学歴や職歴があるわけではなく、NGO運営経験もありません。しかし、どんな国際開発コンサルタントや専門家よりも、そのコミュニティに根差す課題を、文化・歴史的背景を、人々を深く知り、コミュニティに信頼され選ばれたリーダーたちでした。</p><p>　このようなリーダーは、先進国で一般的とされる運営方法でなかったり、緻密な計画より行動、理論よりも実践する性質から、なかなか国際機関や財団の助成を受けることがありません。</p><p>　大きな団体は、クレディビリティやインパクトの大きさ、またその測定可能性を重視せざるを得ません。しかしだからこそ、アース・カンパニーは彼らがコミュニティに与えるインパクトの深さ、量より質を重視し、彼らのポテンシャルを信じて彼らが創る未来に投資したいと考えています。</p><p>　そこで、そのような「傑物」をEarth Company’s Impact Hero of the year として年に一人厳選し、ファンドレイジング始め、事業発展を促進する機会の創出支援をしています。</p>			                               
-										</div>									
-							</div>
-							<div class="col-md-6">
-								<img src="../static/images/impact-hero.jpg" alt="Image" class="img-responsive">
-							</div><br>							
-						</div>
-						<div class="earth-spacer earth-spacer-xlg"></div>
-						<div class="hr"></div><br>
-					</div>
-				</section>
-
-				<section>
-				<section id="earth-newsletter">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 text-center">
-							<ul class="earth-social-icons">
-							    <span style="color: #7dbe7e; font-size: 70px;"><i class="ti-world"></i></a></span>							
-						    </ul>
-						    <h2 class="earth-heading-sm earth-no-margin-bottom"><b>ニュース</b></h2><br>
-							<p>最新の記事<a href="http://earthcompany-jp.tumblr.com/"><br>ニュース</a></p>
-							<h2 id="blog-headline"></h2>
-							<div id="blog-body"></div>
-							<p><a href="http://earthcompany-jp.tumblr.com/"><i class="fa fa-tumblr-square"></i> 他の記事を読む</a></p>
-							<ul id="blog-more">
-							</ul>
-							</div>
-						</div>
 						<div class="earth-spacer earth-spacer-sm"></div>
-					　　 <div class="hr"></div>
-					</div>
-				</section>
-
-
-				<section>
-				<section id="earth-newsletter">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 text-center">
-							    <ul class="earth-social-icons">
-							    <span style="color: #7dbe7e; font-size: 70px;"><i class="ti-email"></i></a></span>							
-						        </ul>
-								<h2 class="earth-heading-sm earth-no-margin-bottom"><b>ニュースレター</b></h2><br>
-								<p>メールアドレスをご登録いただくと、Earth Companyからのメールをお送りします。</p>
-								<div class="earth-spacer earth-spacer-xxs"></div>
-								<form method="post" action="#">
-								  <div class="form-group">
-								    <label for="email" class="sr-only">メールアドレス</label>
-								    <input type="email" class="form-control input-lg" id="email" placeholder="メールアドレス">
-								  </div>
-								  <input type="submit" class="btn btn-primary btn-lg btn-block" value="送信">
-								</form>		
-							</div>
 						</div>
 					</div>
-				</section>
+    </section>
+               
+  <div id="earth-about" data-section="about">
+    <div class="col-md-6 col-md-push-6 earth-bg" style="background-image: url(../static/images/tomaska.jpg)"></div>
+      <div class="col-md-6 col-md-pull-6 earth-text" style="background: #05999D;">
+      <h2 style="color: white; font-size: 20px; font-weight: bold; letter-spacing: 1px;">設立の背景</h2>          
+         <div>
+             <h5 style="color: white;">2014年、共同創設者の濱川明日香・濱川知宏がダライ・ラマ14世よりUnsung Heroes of Compassion（謳われることなき英雄賞）を受賞したことをきっかけに設立。<br>この地球は、本来は後世の人々のものであり、私たち大人が、大切な子供たち、子孫から借りているものです。しかし、20世紀の経済発展を最優先させた世のあり方は、環境、社会、人に、多くの弊害を生みました。<br>私たちは今、自信を持ってこの地球を後世にバトンタッチすることができるでしょうか？<br>その危機感から、アジア太平洋の途上国で「後世に残せる未来」のために活動する革新的で情熱的な社会起業家と日本のみなさまの「橋渡し」を行い、後世へより良い地球を引き継ぐ活動への支援の輪を広げることをミッションとしています。<br>日本もその一員であるアジア太平洋地域には、素晴らしい環境、人、文化があります。私たちはこの活動を通じ、一人でも多くの日本人が各地域への理解と学びを深め、「未来のために行動を起こす」きっかけになることを目指しています。
+             </h5>
+          </div>
+      </div> 
 
-				<footer id="earth-footer">
-					<div class="container">						
-						<ul class="earth-social-icons">
-							<li><a href="https://www.facebook.com/EarthCompanyJP/?fref=ts"><i class="ti-facebook"></i></a></li>							
-						</ul>
-						<p class="text-muted earth-no-margin-bottom text-center"><small>&copy; 2016 <a href="http://www.earthcompany.jp">Earth Company</a>. All rights reserved. </small></p></div>
-				</footer>
-			
-		
-			</div>
-			
+    <div class="col-md-6 earth-bg" style="background-image: url(../static/images/limaska.jpg)"></div>
+      <div class="col-md-6 earth-text" style="background: #015057;">
+          <h2 style="color: white; font-size: 20px; font-weight: bold; letter-spacing: 1px;">深く質の高い活動支援をするために</h2>          
+          <div> 
+          <h5 style="color: white;">共同創設者 濱川明日香・知宏がこれまでに出会った途上国の素晴らしいリーダーたちの中で、稀にふたりの度肝を抜く「傑物」たちがいました。<br>彼らの多くは、輝かしい学歴や職歴があるわけではなく、NGO運営経験もありません。しかし、どんな国際開発コンサルタントや専門家よりも、そのコミュニティに根差す課題を、文化・歴史的背景を、人々を深く知り、コミュニティに信頼され選ばれたリーダーたちでした。<br>このようなリーダーは、先進国で一般的とされる運営方法でなかったり、緻密な計画より行動、理論よりも実践する性質から、なかなか国際機関や財団の助成を受けることがありません。<br>大きな団体は、クレディビリティやインパクトの大きさ、またその測定可能性を重視せざるを得ません。しかしだからこそ、アース・カンパニーは彼らがコミュニティに与えるインパクトの深さ、量より質を重視し、彼らのポテンシャルを信じて彼らが創る未来に投資したいと考えています。<br>そこで、そのような「傑物」をEarth Company’s Impact Hero of the year として年に一人厳選し、ファンドレイジング始め、事業発展を促進する機会の創出支援をしています。</h5>        
+      </div>  
+    </div>
+  </div>
+   
+  <section id="earth-trusted" data-section="trusted">
+    <div class="earth-trusted">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 section-heading text-center">
+                <ul class="earth-social-icons">
+                  <span style="color: #F95469; font-size: 70px;"><i class="ti-comments-smiley"></i></a></span>              
+                </ul>
+            <h2 class="earth-heading-sm earth-no-margin-bottom"><b>メディア</b></h2><br>
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 subtext">
+                <h5 style="text-align: center;">Earth Companyの活動を掲載して頂きました。</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+           <div class="col-md-2 col-sm-3 col-xs-6 col-sm-offset-0 col-md-offset-1">
+            <div class="partner-logo text-center">
+              <a href="http://nge.jp/2014/12/22/post-90795"><img src="../static/images/logo-01.png" alt="Partners" class="img-responsive"></a><h5><b>FUTURAS</b><br>国家存続の危機！？東ティモールを救うべく立ち上がる女性たち</h5>
+            </div>
+           </div>
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="partner-logo text-center">
+                <a href="http://greenz.jp/2015/01/25/unsung_hero/"><img src="../static/images/logo-02.png" alt="Partners" class="img-responsive"></a><h5><b>GREENZ</b><br>東ティモールに環境教育を！日本人で初めてダライ・ラマに表彰された夫婦が取り組む”支援を支援する”活動「アースカンパニー」</h5>
+            </div>
+            </div>
+            <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="partner-logo text-center">
+                <a href="http://eedu.jp/blog/2015/01/13/earth-company/"><img src="../static/images/logo-03.png" alt="Partners" class="img-responsive"></a><h5><b>トジョウエンジン</b><br>途上国で社会貢献活動を行う革新的プロジェクトと先進国の支援希望者を繋ぐ！一般社団法人「Earth Company」の取り組みをご紹介</h5>
+              </div>
+            </div>
+             <div class="col-md-2 col-sm-3 col-xs-6">
+              <div class="partner-logo text-center">
+                <a href="http://dual.nikkei.co.jp/article.aspx?id=5089&page=2"><img src="../static/images/logo-04.png" alt="Partners" class="img-responsive"></a><h5><b>日経DUAL</b><br>夫婦とは、愛の物語を<br>一緒につくるための存在</h5>
+              </div>
+            </div>
+             <div class="col-md-2 col-sm-3 col-xs-6">
+              <a href="http://media.wix.com/ugd/1296f3_602abcfce68b49679974c4ae52577210.pdf"><div class="partner-logo text-center">
+                <img src="../static/images/logo-05.png" alt="Partners" class="img-responsive"></a><h5><b>日本法律家連盟</b><br>法律家への手紙<br>「支援を支援する」<br>Earth Company</h5>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="earth-about" data-section="about">
+    <div class="col-md-6 col-md-push-6 earth-bg" style="background-image: url(../static/images/impact-hero.jpg)"></div>
+    <div class="col-md-6 col-md-pull-6 earth-text" style="background: #7dbe79;">
+      <div class="earth-spacer earth-spacer-sm"></div>
+      <div class="text-center">
+        <ul class="earth-social-icons">
+          <span style="color: #7dbe79; font-size: 70px;"><i class="ti-world" style="color: white;"></i></a></span>            
+        </ul>
+        <h2 class="earth-heading-sm earth-no-margin-bottom" style="color: white;"><b>ニュース</b></h2><br>
+        <h5 style="color: white;">Earth Company では、<br>Tumblr ® で情報を発信しています。</h5>
+        <p><a href="http://earthcompany-jp.tumblr.com/"><i class="fa fa-tumblr-square" style="color: #ffffff;"></i><span style="color: white;"> ニュースを読む</span></a></p>
+        <ul id="blog-more">
+        </ul>
+      </div>
+      <div class="earth-spacer earth-spacer-sm"></div>
+    </div> 
+  </div>
+
+  <div id="earth-about" data-section="about">
+    <div class="col-md-6 earth-bg" style="background-image: url(../static/images/bike.jpg)"></div>
+    <div class="col-md-6 earth-text" style="background: #ffffff;">
+      <div class="earth-spacer earth-spacer-sm"></div>
+      <div class="text-center">
+        <ul class="earth-social-icons">
+          <span style="color: #7dbe79; font-size: 70px;"><i class="ti-email"></i></a></span>
+        </ul>
+        <h2 class="earth-heading-sm earth-no-margin-bottom"><b>ニュースレター</b></h2><br>
+        <h5>メールアドレスをご登録いただくと、<br>Earth Companyからのメールをお送りします。</h5>
+        <div class="col-md-4 col-md-offset-4">
+        <h2><a href="http://earthcompany.us9.list-manage1.com/subscribe?u=6ead3a5944b9abce578b53b56&id=9c894ba07c" class="btn btn-primary btn-md btn-block">登録</a></h2></div>
+      </div>
+      <div class="earth-spacer earth-spacer-sm"></div>
+    </div> 
+  </div>
+
+	<footer id="earth-footer">
+		<div class="container">						
+			<ul class="earth-social-icons">
+				<li><a href="https://www.facebook.com/EarthCompanyJP/?fref=ts"><i class="ti-facebook"></i></a></li>
+      </ul>
+			<p class="text-muted earth-no-margin-bottom text-center"><small>&copy; 2016 <a href="http://www.earthcompany.jp">Earth Company</a>. All rights reserved. </small></p></div>
+	</footer>		
 			
 		<!-- jQuery -->
 		<script src="../static/js/jquery-1.12.2.min.js"></script>
@@ -333,6 +378,8 @@
 		<script src="../static/js/bootstrap.js"></script>
 		<!-- Owl carousel -->
 		<script src="../static/js/owl.carousel.min.js"></script>
+		<!-- Owl carousel -->
+		<script src="../static/js/plugins/jquery.parallax-1.1.3.js"></script>
 		<!-- Magnific Popup -->
 		<script src="../static/js/jquery.magnific-popup.min.js"></script>
 		<!-- Superfish -->
