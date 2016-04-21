@@ -54,13 +54,11 @@ a {
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
   color: #7DBE79;
-  border-bottom: 2px solid transparent;
 }
 a:hover, a:focus, a:active {
   outline: none;
   text-decoration: none;
   color: #7BDE79;
-  border-bottom: 2px solid #7BDE79;
 }
 
 input {
@@ -90,7 +88,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 32px;
   font-family:  "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
@@ -112,18 +110,18 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 24px;
   font-family:  "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
 ul, ol {
-  padding-left: 15px;
+  padding-left: 10px;
   line-height: 26px;
   font-family:  "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 ul ul, ul ol, ol ul, ol ol {
-  padding-left: 25px;
+  padding-left: 10px;
   font-family:  "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 }
 
@@ -162,7 +160,7 @@ textarea {
 }
 
 .earth-lead {
-  font-size: 28px;
+  font-size: 24px;
   line-height: 42px;
   font-weight: 600;
   text-align: justify-all;
@@ -192,8 +190,8 @@ textarea {
 }
 
 .earth-proverb {
-  font-size: 26px;
-  line-height: 42px;
+  font-size: 22px;
+  line-height: 38px;
   font-weight: 600;
   text-align: justify-all;
   color: #4a4a4a;
@@ -310,7 +308,7 @@ video .earth-hero-video {
   }  
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 768px) {
   #earth-logo1 {
     display: none;
     height: 0px;}
@@ -333,6 +331,34 @@ video {
     display: block;
 }
 
+.playvideo {
+  text-align: center;
+  padding-top: 150px;
+  font-size: 150px;
+  opacity: 0.7; 
+  color: white;
+} 
+
+@media screen and (max-width: 1200px) {
+  .playvideo {
+    font-size: 120px;
+    padding-top: 240px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .playvideo {
+    font-size: 120px;
+    padding-top: 90px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .playvideo {
+    font-size: 100px;
+    padding-top: 50px;
+  }
+}
 
 
 /* Header */
@@ -392,8 +418,8 @@ video {
 
 #earth-logo {
   font-size: 13px;
-  margin: 16px 0 0 0;
-  padding-top: 4px;
+  margin: 13px 0 0 0;
+  padding-top: 2px;
   padding: 0px;
   font-weight: bold;
 }
@@ -407,18 +433,17 @@ video {
 @media screen and (max-width: 768px) {
   #earth-logo {
     text-align: center;
-    padding-top: 4px;
-    margin: 10px 0 0 0;
+    padding-top: 2px;
+    margin: 6px 0 0 0;
     float: none !important;
   }
 }
 
 #earth-logo1 {
-  font-size: 13px;
-  margin: 18px 0 0 0;
-  padding-top: 4px;
-  line-height: 20px;
-  margin-left: 20px;
+  font-size: 12px;
+  margin: 12px 0 0 0;
+  line-height: 18px;
+  margin-left: 18px;
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -451,7 +476,7 @@ video {
   box-shadow: none;
   border: transparent;
   min-width: 8em;
-  width: 8em;
+  width: 4em;
 }
 
 .sf-menu a {
@@ -464,7 +489,7 @@ video {
   border-top: none;
   text-decoration: none;
   zoom: 1;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   border-bottom: none !important;
 }
@@ -480,7 +505,7 @@ video {
 .sf-menu ul li a,
 .sf-menu ul ul li a {
   text-transform: none;
-  padding: .75em 1em;
+  padding: .25em 0.5em;
   letter-spacing: 1px;
 }
 
@@ -538,7 +563,7 @@ video {
 }
 
 #earth-menu-wrap .sf-menu a {
-  padding: 2em 2em 2em 2em;
+  padding: 2em 1em 2em 1em;
 }
 
 #earth-primary-menu > li > ul li.active > a {
@@ -557,9 +582,9 @@ video {
   -moz-osx-font-smoothing: grayscale;
   position: absolute;
   float: right;
-  margin-right: 5px;
+  margin-right: 0px;
   top: 50%;
-  margin-top: -7px;
+  margin-top: 0px;
   content: "\e64b";
   color: rgba(255, 255, 255, 0.3);
 }
@@ -578,7 +603,7 @@ video {
   float: right;
   margin-right: 10px;
   top: 13px;
-  font-size: 12px;
+  font-size: 10px;
   content: "\e649";
   color: rgba(255, 255, 255, 0.3);
 }
@@ -636,7 +661,7 @@ video {
 #earth-primary-menu .earth-sub-menu a {
   letter-spacing: 0;
   padding: 0 15px;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 26px;
   color: #ffffff !important;
   text-transform: none;
@@ -723,6 +748,7 @@ video {
 #earth-mobile-menu #earth-mobile-menu-ul .earth-sub-menu {
   display: none;
   padding-left: 20px;
+  padding-right: 20px;
 }
 #earth-mobile-menu #earth-mobile-menu-ul .earth-sub-menu li {
   list-style: none;
@@ -806,17 +832,20 @@ video {
   background: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 @media screen and (max-width: 992px) {
   #earth-about .earth-bg {
     width: 100%;
     min-height: 500px;
+    position: relative;
   }
 }
 @media screen and (max-width: 768px) {
   #earth-about .earth-bg {
     width: 100%;
     min-height: 300px;
+    position: relative;
   }
 }
 
@@ -1451,7 +1480,7 @@ Components
 
 #separate-para{
     background: #222;
-    background: url(../images/proverb.png) 50% 0 no-repeat scroll;
+    background: url(../images/proverb.png) 0 0 no-repeat scroll;
     -webkit-background-size: cover;
        -moz-background-size: cover;
             background-size: cover;
@@ -1459,7 +1488,7 @@ Components
 }
 
 .separate-section {
-    padding: 320px 0;
+    padding: 300px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -1763,4 +1792,172 @@ Components
   #earth-trusted {
     padding: 2em 0;
   }
+}
+
+/* footer */
+
+.footer-distributed{
+  background-color: #7DBE79;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 20%;
+  margin-right: 200px;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  letter-spacing: 1px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  font-size: 16px;
+  line-height: 42px;
+  font-family:  "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  text-align: justify-all;
+  color: #ffffff;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+  margin-right: 200px;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0px 0px 0px 0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  #ffffff;
+  text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 25%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.footer-distributed .footer-icons{
+  margin-top: 0px;
+}
+
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 992px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right
+  {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+
+
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
+
+.shadow {
+    margin-top: 5px; /* 画像の上の余白*/
+    display: inline-block; 
+    box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8); /*横方向　下方向　ぼかし　広がり　色 */
 }
