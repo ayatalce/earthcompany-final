@@ -1928,8 +1928,6 @@ Components
   margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
-
 @media (max-width: 992px) {
 
   .footer-distributed{
@@ -1945,8 +1943,6 @@ Components
     margin-bottom: 40px;
     text-align: left;
   }
-
-
 
 
   .footer-distributed .footer-center i{
