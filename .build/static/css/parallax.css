@@ -1,0 +1,10 @@
+/*  ----------------------------------------------
+            CSS TABLE OF CONTENTS
+    ------------------------------------------------- */
+
+/* 1:	Parallax effect on element
+/* ---------------------------------------------- */
+#impact-para,
+#separate-para{
+	background-attachment: fixed;
+}
