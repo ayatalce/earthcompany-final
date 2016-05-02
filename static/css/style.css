@@ -1816,8 +1816,7 @@ Components
 /* Footer left */
 
 .footer-distributed .footer-left{
-  width: 20%;
-  margin-right: 200px;
+  width: 30%;
 }
 
 /* The company logo */
@@ -1837,7 +1836,7 @@ Components
 .footer-distributed .footer-links{
   color:  #ffffff;
   letter-spacing: 1px;
-  padding: 0;
+  padding: 0 70px;
 }
 
 .footer-distributed .footer-links a{
@@ -1860,7 +1859,7 @@ Components
 
 .footer-distributed .footer-center{
   width: 35%;
-  margin-right: 200px;
+  margin-right: 20px;
 }
 
 .footer-distributed .footer-center i.fa-envelope{
@@ -1872,7 +1871,7 @@ Components
   display: inline-block;
   color: #ffffff;
   vertical-align: middle;
-  margin: 0px 0px 0px 0;
+  margin: 10px 0px 10px 0;
 }
 
 .footer-distributed .footer-center p span{
@@ -1891,7 +1890,7 @@ Components
 /* Footer Right */
 
 .footer-distributed .footer-right{
-  width: 25%;
+  width: 30%;
 }
 
 .footer-distributed .footer-company-about{
