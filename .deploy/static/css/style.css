@@ -285,7 +285,6 @@ blockquote span{
   color: #999;
 }
 
-
 video .earth-hero-video {
   width: 100%;
   height: 100%;
@@ -1480,7 +1479,7 @@ Components
 
   #separate-para{
     background: #222;
-    background: url(../images/proverb.png) 0 0 no-repeat scroll;
+    background: url(../images/agri.jpg) 0 0 no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -1836,7 +1835,7 @@ Components
   .footer-distributed .footer-links{
     color:  #ffffff;
     letter-spacing: 1px;
-    padding: 0 120px;
+    padding: 0px 0px;
   }
 
   .footer-distributed .footer-links a{
@@ -1871,7 +1870,7 @@ Components
     display: inline-block;
     color: #ffffff;
     vertical-align: middle;
-    margin: 10px 0px 10px 0;
+    margin: 10px 0 10px 0;
   }
 
   .footer-distributed .footer-center p span{
