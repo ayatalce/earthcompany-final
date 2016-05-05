@@ -332,16 +332,16 @@ video .earth-hero-video {
 
       .playvideo {
         text-align: center;
-        padding-top: 150px;
+        padding-top: 130px;
         font-size: 150px;
-        opacity: 0.7; 
+        opacity: 0.8; 
         color: white;
       } 
 
       @media screen and (max-width: 1200px) {
         .playvideo {
           font-size: 120px;
-          padding-top: 240px;
+          padding-top: 150px;
         }
       }
 
@@ -355,7 +355,7 @@ video .earth-hero-video {
       @media screen and (max-width: 768px) {
         .playvideo {
           font-size: 100px;
-          padding-top: 50px;
+          padding-top: 80px;
         }
       }
 
@@ -905,7 +905,7 @@ video .earth-hero-video {
 
       #earth-hero .earth-hero-wrap {
         display: table;
-        height: 200px;
+        height: 700px;
         width: 100%;
       }
       #earth-hero .earth-hero-wrap .earth-hero-intro {
@@ -915,9 +915,10 @@ video .earth-hero-video {
 
       }
       #earth-hero .earth-hero-wrap .earth-hero-intro > h1 {
-        font-size: 40px;
+        font-size: 38px;
+        letter-spacing: 1px;
         font-weight: normal;
-        line-height: 62px;
+        line-height: 64px;
         text-transform: uppercase;
         letter-spacing: 7px;
         margin-left: 40px;
@@ -925,8 +926,8 @@ video .earth-hero-video {
       @media screen and (max-width: 768px) {
         #earth-hero .earth-hero-wrap .earth-hero-intro > h1 {
           letter-spacing: 4px;
-          font-size: 30px;
-          line-height: 42px;
+          font-size: 24px;
+          line-height: 48px;
         }
       }
       #earth-hero .earth-hero-wrap .earth-hero-intro > h2 {
@@ -948,7 +949,7 @@ video .earth-hero-video {
         display: block;
         background: rgba(255, 255, 255, 0.4);
         width: 50px;
-        height: 3px;
+        height: 30px;
         left: 50%;
         margin-left: -25px;
       }
@@ -1810,165 +1811,9 @@ Components
     }
   }
 
-  /* footer */
-
-  .footer-distributed{
-    background-color: #7DBE79;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    font: bold 16px sans-serif;
-    padding: 50px 50px;
-  }
-
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right{
-    display: inline-block;
-    vertical-align: top;
-  }
-
-  /* Footer left */
-
-  .footer-distributed .footer-left{
-    width: 30%;
-  }
-
-  /* The company logo */
-
-  .footer-distributed h3{
-    color:  #ffffff;
-    font: normal 36px 'Cookie', cursive;
-    margin: 0;
-  }
-
-  .footer-distributed h3 span{
-    color:  #5383d3;
-  }
-
-  /* Footer links */
-
-  .footer-distributed .footer-links{
-    color:  #ffffff;
-    letter-spacing: 1px;
-    padding: 0px 0px;
-  }
-
-  .footer-distributed .footer-links a{
-    display:inline-block;
-    font-size: 16px;
-    line-height: 42px;
-    font-family:  "Century Gothic", "YuGothic", '游ゴシック',"Helvetica Neue", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-    text-align: justify-all;
-    color: #ffffff;
-  }
-
-  .footer-distributed .footer-company-name{
-    color:  #ffffff;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0;
-  }
-
-  /* Footer Center */
-
-  .footer-distributed .footer-center{
-    width: 35%;
-    margin-right: 20px;
-  }
-
-  .footer-distributed .footer-center i.fa-envelope{
-    font-size: 17px;
-    line-height: 38px;
-  }
-
-  .footer-distributed .footer-center p{
-    display: inline-block;
-    color: #ffffff;
-    vertical-align: middle;
-    margin: 10px 0 10px 0;
-  }
-
-  .footer-distributed .footer-center p span{
-    display:block;
-    font-weight: normal;
-    font-size:14px;
-    line-height:2;
-  }
-
-  .footer-distributed .footer-center p a{
-    color:  #ffffff;
-    text-decoration: none;;
-  }
-
-
-  /* Footer Right */
-
-  .footer-distributed .footer-right{
-    width: 30%;
-  }
-
-  .footer-distributed .footer-company-about{
-    line-height: 20px;
-    font-size: 13px;
-    font-weight: normal;
-  }
-
-  .footer-distributed .footer-company-about span{
-    display: block;
-    color:  #ffffff;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 0px;
-  }
-
-  .footer-distributed .footer-icons{
-    margin-top: 0px;
-  }
-
-  .footer-distributed .footer-icons a{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color:  #33383b;
-    border-radius: 2px;
-
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 35px;
-
-    margin-right: 3px;
-    margin-bottom: 5px;
-  }
-
-  @media (max-width: 992px) {
-
-    .footer-distributed{
-      font: bold 14px sans-serif;
-    }
-
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right
-    {
-      display: block;
-      width: 100%;
-      margin-bottom: 40px;
-      text-align: left;
-    }
-
-
-    .footer-distributed .footer-center i{
-      margin-left: 0;
-    }
-
-  }
-
   .shadow {
     margin-top: 5px; /* 画像の上の余白*/
     display: inline-block; 
     box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8); /*横方向　下方向　ぼかし　広がり　色 */
+
   }
