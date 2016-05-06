@@ -8,12 +8,12 @@
 }
 
 @font-face {
-  font-family: 'Yu Gothic Bold';
+  font-family: 'YuGothic Bold';
   src: url("../fonts/Yu Gothic Bold.otf");
 }
 
 @font-face {
-  font-family: 'Yu Gothic Medium';
+  font-family: 'YuGothic Medium';
   src: url("../fonts/YuGothic Medium.otf");
 }
 
@@ -348,7 +348,7 @@ video .earth-hero-video {
 
       .playvideo {
         text-align: center;
-        padding-top: 130px;
+        padding-top: 60px;
         font-size: 150px;
         opacity: 0.8; 
         color: white;
@@ -357,24 +357,25 @@ video .earth-hero-video {
       @media screen and (max-width: 1200px) {
         .playvideo {
           font-size: 120px;
-          padding-top: 150px;
+          padding-top: 80px;
         }
       }
 
       @media screen and (max-width: 992px) {
         .playvideo {
           font-size: 120px;
-          padding-top: 90px;
+          padding-top: 20px;
         }
       }
 
       @media screen and (max-width: 768px) {
         .playvideo {
           font-size: 100px;
-          padding-top: 80px;
+          padding-top: 0px;
         }
       }
 
+  
 
       /* Header */
       #earth-header-section {
@@ -1214,9 +1215,40 @@ Components
   background: #7DBE79;
 }
 
+.btn-red {
+  border-bottom: none !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 10px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: #f95460;
+}
+
+.btn-red:focus,
+.btn-red:hover, {
+  background: #f95460;
+  color: #ffffff;
+}
+
 .donate{
   background:white;
   color: #7BDE79;
+  box-shadow: 1px 1px 3px rbga(0,0,0,0.3);
+}
+
+.read{
+  background:white;
+  color: #f95460;
   box-shadow: 1px 1px 3px rbga(0,0,0,0.3);
 }
 

@@ -7,6 +7,22 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'YuGothic Bold';
+  src: url("../fonts/Yu Gothic Bold.otf");
+}
+
+@font-face {
+  font-family: 'YuGothic Medium';
+  src: url("../fonts/YuGothic Medium.otf");
+}
+
+@font-face {
+  font-family: 'Century Gothic';
+  src: url("../fonts/Century Gothic.otf");
+}
+
+
 html, body {
   overflow-x: auto;
 }
