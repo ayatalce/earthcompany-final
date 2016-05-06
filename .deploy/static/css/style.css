@@ -348,7 +348,7 @@ video .earth-hero-video {
 
       .playvideo {
         text-align: center;
-        padding-top: 130px;
+        padding-top: 60px;
         font-size: 150px;
         opacity: 0.8; 
         color: white;
@@ -357,21 +357,21 @@ video .earth-hero-video {
       @media screen and (max-width: 1200px) {
         .playvideo {
           font-size: 120px;
-          padding-top: 150px;
+          padding-top: 80px;
         }
       }
 
       @media screen and (max-width: 992px) {
         .playvideo {
           font-size: 120px;
-          padding-top: 90px;
+          padding-top: 20px;
         }
       }
 
       @media screen and (max-width: 768px) {
         .playvideo {
           font-size: 100px;
-          padding-top: 80px;
+          padding-top: 0px;
         }
       }
 
@@ -1214,9 +1214,40 @@ Components
   background: #7DBE79;
 }
 
+.btn-red {
+  border-bottom: none !important;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-right: 10px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  background: #f95460;
+}
+
+.btn-red:focus,
+.btn-red:hover, {
+  background: #f95460;
+  color: #ffffff;
+}
+
 .donate{
   background:white;
   color: #7BDE79;
+  box-shadow: 1px 1px 3px rbga(0,0,0,0.3);
+}
+
+.read{
+  background:white;
+  color: #f95460;
   box-shadow: 1px 1px 3px rbga(0,0,0,0.3);
 }
 
@@ -1831,5 +1862,97 @@ Components
     margin-top: 5px; /* 画像の上の余白*/
     display: inline-block; 
     box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8); /*横方向　下方向　ぼかし　広がり　色 */
-
   }
+
+
+
+.earth-footer-wrap {
+  padding-top: 2em;
+  padding-bottom: 5em;
+}
+@media screen and (max-width: 768px) {
+  .earth-footer-wrap {
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+}
+
+.earth-footer {
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 600;
+  text-align: justify-all;
+  color: #4a4a4a;
+  letter-spacing: 1px;
+}
+
+@media screen and (max-width: 768px) {
+  .earth-footer {
+    font-size: 22px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .earth-footer {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+      #earth-footer {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 992px) {
+        #earth-footer .earth-footertext {
+          width: 100%;
+          min-height: 300px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        #earth-footer .earth-footertext {
+          width: 100%;
+          min-height: 200px;
+        }
+      }
+
+      #earth-footer .earth-footertext {
+        padding: 1em 1em;
+        text-align: left;
+      }
+
+      @media screen and (max-width: 992px) {
+        #earth-footer .earth-footertext {
+          padding: 1em;
+        }
+      }
+
+      #earth-footer .earth-bg {
+        background: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      @media screen and (max-width: 992px) {
+        #earth-footer .earth-bg {
+          width: 100%;
+          min-height: 500px;
+          position: relative;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        #earth-footer .earth-bg {
+          width: 100%;
+          min-height: 300px;
+          position: relative;
+        }
+      }
