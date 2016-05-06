@@ -10,11 +10,13 @@
 @font-face {
   font-family: 'YuGothic Bold';
   src: url("../fonts/Yu Gothic Bold.otf");
+  font-weight: bold;
 }
 
 @font-face {
   font-family: 'YuGothic Medium';
   src: url("../fonts/YuGothic Medium.otf");
+  font-weight: normal;
 }
 
 @font-face {
