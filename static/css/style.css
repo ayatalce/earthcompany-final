@@ -216,6 +216,14 @@ textarea {
   letter-spacing: 1px;
 }
 
+.earth-proverb-sub {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 600;
+  text-align: justify-all;
+  letter-spacing: 1px;
+}
+
 @media screen and (max-width: 768px) {
   .earth-proverb {
     font-size: 22px;
@@ -306,7 +314,7 @@ blockquote span{
 video .earth-hero-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /*object-fit: cover;*/
 }
 
 .earth-hero{
@@ -1251,7 +1259,8 @@ Components
 
 .donate{
   background:white;
-  color: #7BDE79;
+  /*color: #7BDE79;*/
+  color: #368953;
   box-shadow: 1px 1px 3px rbga(0,0,0,0.3);
 }
 
@@ -1308,7 +1317,7 @@ Components
 .btn-danger:hover,
 .btn-danger:active,
 .btn-danger:focus {
-  background: #7BDE79;
+  background: #368953;
   color: #ffffff;
 }
 
@@ -1496,7 +1505,8 @@ Components
   }
 
   .resp-tab-active {
-    color: #7DBE79;
+    color: #F7931E;
+    border: none;
   }
 
   .resp-content-active, .resp-accordion-active {
